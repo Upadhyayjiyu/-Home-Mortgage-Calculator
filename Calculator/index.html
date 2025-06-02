@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mortgage Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Home Mortgage Calculator</h1>
+    <div class="calculator">
+      <label>Home Price ($)
+        <input type="number" id="price" placeholder="300000"/>
+      </label>
+      <label>Down Payment ($)
+        <input type="number" id="downPayment" placeholder="60000"/>
+      </label>
+      <label>Loan Term (Years)
+        <input type="number" id="loanTerm" placeholder="30"/>
+      </label>
+      <label>Interest Rate (%)
+        <input type="number" step="0.01" id="interestRate" placeholder="3.5"/>
+      </label>
+      <button onclick="calculateMortgage()">Calculate</button>
+      <div class="result">
+        Estimated Monthly Payment: <span id="monthlyPayment">$0.00</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
